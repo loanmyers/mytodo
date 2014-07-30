@@ -8,9 +8,14 @@
  * Controller of the mytodoApp
  */
 angular.module('mytodoApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, localStorageService) {
     
-    $scope.todos = [];
+    var todosInStore = localStorageService.get('todos');
+    $scope.todos = todosInStore && todosInStore.split('\n') || [];
+    $scope.$watch('todos', function(){
+        localStorageService.add('todos', $scope.todos.join('\n'));
+    }, true);
+
 
     $scope.addTodo = function(){
     	// need to add error checking
