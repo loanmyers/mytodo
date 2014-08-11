@@ -16,7 +16,6 @@ angular.module('mytodoApp')
         localStorageService.add('todos', $scope.todos.join('\n'));
     }, true);
 
-
     $scope.addTodo = function(){
     	// need to add error checking
     	$scope.todos.push($scope.todo);

@@ -1,0 +1,38 @@
+/* add a grid for typo grid testing */
+.basegrid{
+  background-color: transparent;
+  background-image:
+  	
+  	linear-gradient(
+  		0deg, transparent 0%,
+  		transparent 90%,
+  		rgba(69, 119, 250, .09) 91%,
+  		rgba(69, 119, 250, .09) 92%,
+		rgba(69, 119, 250, .09) 93%,
+  		rgba(69, 119, 250, .09) 94%,
+  		rgba(69, 119, 250, .09) 95%,
+		rgba(69, 119, 250, .09) 96%,
+  		rgba(69, 119, 250, .09) 97%,
+  		rgba(69, 119, 250, .09) 98%,
+  		rgba(69, 119, 250, .09) 99%,
+  		rgba(69, 119, 250, .09) 100%
+  	),
+	linear-gradient(
+		90deg, transparent 0%,
+		transparent 90%,
+  		rgba(69, 119, 250, .09) 91%,
+  		rgba(69, 119, 250, .09) 92%,
+		rgba(69, 119, 250, .09) 93%,
+  		rgba(69, 119, 250, .09) 94%,
+  		rgba(69, 119, 250, .09) 95%,
+		rgba(69, 119, 250, .09) 96%,
+  		rgba(69, 119, 250, .09) 97%,
+  		rgba(69, 119, 250, .09) 98%,
+  		rgba(69, 119, 250, .09) 99%,
+  		rgba(69, 119, 250, .09) 100%
+  	)
+  ;
+  
+  height:100%;
+  background-size:12px 12px;
+}
