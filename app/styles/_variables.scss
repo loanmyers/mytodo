@@ -50,23 +50,23 @@ $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !def
 $font-family-base:        $font-family-sans-serif !default;
 
 // Additional variables I've created
-$base-unit:				12px;
+$uom:				12px;
 $header-ratio: 			1.0;
 $text-ratio: 			1.333;
 $subhead-ratio: 		1.333;
 $image-ratio: 			1.5;
 
 
-$font-size-base:          floor(($font-size-base * 1.5)) !default;
-$font-size-large:         floor(($font-size-base * 1.916)) !default; // ~18px
-$font-size-small:         floor(($font-size-base * 1.167)) !default; // ~12px
+$font-size-base:          floor(($uom * 1.5)) !default;
+$font-size-large:         floor(($uom * 1.916)) !default; // ~18px
+$font-size-small:         floor(($uom * 1.167)) !default; // ~12px
 
-$font-size-h1:            floor(($base-unit * 8)) !default; // ~36px
-$font-size-h2:            floor(($base-unit * 7)) !default; // ~30px
-$font-size-h3:            floor(($base-unit * 5)) !default; // ~24px
-$font-size-h4:            floor(($base-unit * 3)) !default; // ~18px
-$font-size-h5:            floor(($base-unit * 3)) !default;
-$font-size-h6:            floor(($base-unit * 2)) !default; // ~12px
+$font-size-h1:            floor(($uom * 8)) !default; // ~36px
+$font-size-h2:            floor(($uom * 7)) !default; // ~30px
+$font-size-h3:            floor(($uom * 5)) !default; // ~24px
+$font-size-h4:            floor(($uom * 3)) !default; // ~18px
+$font-size-h5:            floor(($uom * 3)) !default;
+$font-size-h6:            floor(($uom * 2)) !default; // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        2 !default; // 24/12
@@ -96,24 +96,24 @@ $icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-$padding-base-vertical:     floor(($base-unit * 0.5)) !default;
-$padding-base-horizontal:   floor(($base-unit * 1)) !default;
+$padding-base-vertical:     floor(($uom * 0.5)) !default;
+$padding-base-horizontal:   floor(($uom * 1)) !default;
 
-$padding-large-vertical:    floor(($base-unit * 1)) !default;
-$padding-large-horizontal:  floor(($base-unit * 1)) !default;
+$padding-large-vertical:    floor(($uom * 1)) !default;
+$padding-large-horizontal:  floor(($uom * 1)) !default;
 
-$padding-small-vertical:    floor(($base-unit * 0.5)) !default;
-$padding-small-horizontal:  floor(($base-unit * 1)) !default;
+$padding-small-vertical:    floor(($uom * 0.5)) !default;
+$padding-small-horizontal:  floor(($uom * 1)) !default;
 
-$padding-xs-vertical:       floor(($base-unit * 0.5)) !default;
-$padding-xs-horizontal:     floor(($base-unit * 0.5)) !default;
+$padding-xs-vertical:       floor(($uom * 0.5)) !default;
+$padding-xs-horizontal:     floor(($uom * 0.5)) !default;
 
 $line-height-large:         $text-ratio !default;
 $line-height-small:         $text-ratio !default;
 
-$border-radius-base:        floor(($base-unit * 0.25)) !default;
-$border-radius-large:       floor(($base-unit * 0.25)) !default;
-$border-radius-small:       floor(($base-unit * 0.25)) !default;
+$border-radius-base:        floor(($uom * 0.25)) !default;
+$border-radius-large:       floor(($uom * 0.25)) !default;
+$border-radius-small:       floor(($uom * 0.25)) !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
@@ -121,9 +121,9 @@ $component-active-color:    #fff !default;
 $component-active-bg:       $brand-primary !default;
 
 //** Width of the `border` for generating carets that indicator dropdowns.
-$caret-width-base:          floor(($base-unit * 0.25)) !default;
+$caret-width-base:          floor(($uom * 0.25)) !default;
 //** Carets increase slightly in size for larger components.
-$caret-width-large:         floor(($base-unit * 0.25)) !default;
+$caret-width-large:         floor(($uom * 0.25)) !default;
 
 
 //== Tables
@@ -131,9 +131,9 @@ $caret-width-large:         floor(($base-unit * 0.25)) !default;
 //## Customizes the `.table` component with basic values, each used across all table variations.
 
 //** Padding for `<th>`s and `<td>`s.
-$table-cell-padding:            floor(($base-unit * 1)) !default;
+$table-cell-padding:            floor(($uom * 1)) !default;
 //** Padding for cells in `.table-condensed`.
-$table-condensed-cell-padding:  floor(($base-unit * 0.5)) !default;
+$table-condensed-cell-padding:  floor(($uom * 0.5)) !default;
 
 //** Default background color used for all tables.
 $table-bg:                      transparent !default;
@@ -347,7 +347,7 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-height:                    floor(($base-unit * 10)) !default;
+$navbar-height:                    floor(($uom * 10)) !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
