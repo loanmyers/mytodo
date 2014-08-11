@@ -51,19 +51,13 @@ $font-family-base:        $font-family-sans-serif !default;
 
 // Additional variables I've created
 $base-unit:				12px;
-$base:					12px;
 $header-ratio: 			1.0;
 $text-ratio: 			1.333;
 $subhead-ratio: 		1.333;
 $image-ratio: 			1.5;
 
-@mixin uom($ratio) {
-	$ratio;
-	// ($base * $ratio) * 100%;
-}
 
-
-$font-size-base:          @include uom(1.5) !default;
+$font-size-base:          floor(($font-size-base * 1.5)) !default;
 $font-size-large:         floor(($font-size-base * 1.916)) !default; // ~18px
 $font-size-small:         floor(($font-size-base * 1.167)) !default; // ~12px
 
@@ -91,7 +85,7 @@ $headings-color:          inherit !default;
 //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
 //** Load fonts from this directory.
-$icon-font-path: "bootstrap/" !default;
+$icon-font-path: 		  "bootstrap/" !default;
 //** File name for all font files.
 $icon-font-name:          "glyphicons-halflings-regular" !default;
 //** Element ID within SVG icon file.
