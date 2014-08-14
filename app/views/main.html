@@ -1,29 +1,47 @@
-<div class="col-xs-4">
+<div class="row">
 
-  <h2>My Todos</h2>
+    <div class="col-md-1">
 
-  <!-- Todos input -->
-  <form role="form" ng-submit="addTodo()">
-   <div class="row">
-      <div class="input-group">
-        <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
-        <span class="input-group-btn">
-          <input type="submit" class="btn btn-primary" value="add">
-        </span>
+      <h2>My Todos</h2>
+
+      <!-- Todos input -->
+      <form role="form" ng-submit="addTodo()">
+        <div class="row">
+          <div class="input-group">
+            <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
+            <span class="input-group-btn">
+              <input type="submit" class="btn btn-primary" value="add">
+            </span>
+          </div>
+        </div>
+      </form>
+
+      <!-- <p></p> -->
+
+      <!-- Todos list -->
+      <div ui-sortable ng-model="todos">
+        <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
+          <input type="text" ng-model="todo" class="form-control">
+          <span class="input-group-btn">
+            <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
+          </span>
+        </p>
       </div>
+
+
     </div>
-  </form>
-  <p></p>
 
-  <!-- Todos list -->
-  <div ui-sortable ng-model="todos">
-    <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
-      <input type="text" ng-model="todo" class="form-control">
-      <span class="input-group-btn">
-        <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
-      </span>
-    </p>
-  </div>
 
+    <div class="col-md-1"><p>Box 2</p></div>
+    <div class="col-md-1"><p>Box 3</p></div>
+    <div class="col-md-1"><p>Box 4</p></div>
+    <div class="col-md-1"><p>Box 5</p></div>
+    <div class="col-md-1"><p>Box 6</p></div>
+    <div class="col-md-1"><p>Box 7</p></div>
+    <div class="col-md-1"><p>Box 8</p></div>
+    <div class="col-md-1"><p>Box 9</p></div>
+    <div class="col-md-1"><p>Box 10</p></div>
+    <div class="col-md-1"><p>Box 11</p></div>
+    <div class="col-md-1"><p>Box 12</p></div>
 
 </div>
