@@ -1,47 +1,54 @@
-<div class="row">
+<div class="row well">
+    <div class="col-lg-12 col-md-6 col-sm-4 col-xs-12 well">
 
-    <div class="col-md-1">
+        <h2>My Todos</h2>
 
-      <h2>My Todos</h2>
-
-      <!-- Todos input -->
-      <form role="form" ng-submit="addTodo()">
-        <div class="row">
-          <div class="input-group">
-            <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
+        <!-- Todos input -->
+        <form role="form" ng-submit="addTodo()">
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
             <span class="input-group-btn">
               <input type="submit" class="btn btn-primary" value="add">
             </span>
-          </div>
-        </div>
-      </form>
+                </div>
+            </div>
+        </form>
 
-      <!-- <p></p> -->
+        <!-- <p></p> -->
 
-      <!-- Todos list -->
-      <div ui-sortable ng-model="todos">
-        <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
-          <input type="text" ng-model="todo" class="form-control">
+        <!-- Todos list -->
+        <div ui-sortable ng-model="todos">
+            <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
+            <input type="text" ng-model="todo" class="form-control">
           <span class="input-group-btn">
             <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
           </span>
-        </p>
-      </div>
+            </p>
+        </div>
 
 
     </div>
 
+    <!--<div class="clearfix visible-lg-block"></div>-->
+    <div class="clearfix visible-md-block"></div>
+    <div class="clearfix visible-sm-block"></div>
+    <div class="clearfix visible-xs-block"></div>
 
-    <div class="col-md-1"><p>Box 2</p></div>
-    <div class="col-md-1"><p>Box 3</p></div>
-    <div class="col-md-1"><p>Box 4</p></div>
-    <div class="col-md-1"><p>Box 5</p></div>
-    <div class="col-md-1"><p>Box 6</p></div>
-    <div class="col-md-1"><p>Box 7</p></div>
-    <div class="col-md-1"><p>Box 8</p></div>
-    <div class="col-md-1"><p>Box 9</p></div>
-    <div class="col-md-1"><p>Box 10</p></div>
-    <div class="col-md-1"><p>Box 11</p></div>
-    <div class="col-md-1"><p>Box 12</p></div>
+    <div class="col-md-1 well"><p>Box 2</p></div>
+    <div class="col-md-1 well"><p>Box 3</p></div>
+    <div class="col-md-1 well"><p>Box 4</p></div>
+    <div class="col-md-1 well"><p>Box 5</p></div>
+    <div class="col-md-1 well"><p>Box 6</p></div>
+    <div class="col-md-1 well"><p>Box 7</p></div>
+    <div class="col-md-1 well"><p>Box 8</p></div>
+    <div class="col-md-1 well"><p>Box 9</p></div>
+    <div class="col-md-1 well"><p>Box 10</p></div>
+    <div class="col-md-1 well"><p>Box 11</p></div>
+    <div class="col-md-1 well"><p>Box 12</p></div>
+    <div class="col-md-1 well"><p>Box 13</p></div>
+    <div class="col-md-1 well"><p>Box 14</p></div>
+    <div class="col-md-1 well"><p>Box 15</p></div>
+    <div class="col-md-1 well"><p>Box 16</p></div>
 
 </div>
