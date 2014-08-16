@@ -8,8 +8,11 @@
  * Controller of the mytodoApp
  */
 angular.module('mytodoApp')
-  .controller('MainCtrl', function ($scope, localStorageService) {
-    
+  .controller('MainCtrl', function ($scope, $window, localStorageService) {
+
+    $scope.width = $window.innerwidth;
+    $scope.height = $window.innerheight;
+
     var todosInStore = localStorageService.get('todos');
     $scope.todos = todosInStore && todosInStore.split('\n') || [];
     $scope.$watch('todos', function(){

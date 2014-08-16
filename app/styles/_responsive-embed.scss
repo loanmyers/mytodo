@@ -34,6 +34,10 @@
   }
 
   // Modifier class for 3:2 aspect ratio
+  &.embed-responsive-3by2 {
+    padding-bottom: 66.67%;
+  }
+
   // Modifier class for 1:√2 aspect ratio
   // Modifier class for 1:√3 aspect ratio
   // Modifier class for 1:√4 aspect ratio
